@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+
+
+header {
+    background: #ff5100;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.header-top h1 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.container nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.container nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container nav ul li a:hover {
+    background-color: #fff;
+    color: #ff5100;
+}
+
+.hero {
+    background-color: hwb(0 97% 3%);
+    color: #000000;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2{
+    margin-bottom: 80px;
+    
+}
+.button{
+    width: 350px;
+    height: 80px;
+    background-color: rgb(37, 211, 102);
+    margin: 40px;
+    border-radius: 40px;
+    border: 0;
+}
+.button a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.about{
+    font-size: 20px;
+    
+}
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.menu-item:hover{
+    cursor: pointer;
+}
+
+.menu-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+}
+
+.imgs-produtos{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.about,
+.menu,
+.contact,
+.testimonials {
+    padding: 80px 0; /* Maior espaçamento entre as seções */
+    text-align: center;
+}
+
+.about h2,
+.menu h2,
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Espaçamento adicional abaixo dos títulos */
+}
+
+.contact{
+    width: 100%;
+    background-image: url("./assets/images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+}
+.contact h1{
+    font-size: 3rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    background: #f9f9f9;
+}
+
+.testimonial-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+.social {
+    padding: 20px 0;
+    text-align: center;
+    background: #333;
+}
+
+.social .social-icon {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social .social-icon:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.gallery {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.gallery-images {
+    display: flex;
+    overflow-x: auto; /* Permite a navegação horizontal */
+    overflow-y: hidden; /* Esconde a barra de rolagem vertical */
+    white-space: nowrap; /* Mantém as imagens em uma linha horizontal */
+}
+
+.gallery-item {
+    margin-right: 20px; /* Espaçamento entre as imagens */
+    transition: transform 0.3s ease;
+    flex: 0 0 auto; /* Impede que as imagens aumentem além do seu tamanho original */
+}
+
+.gallery-item img {
+    display: block;
+    width: 250px; /* Tamanho das imagens */
+    height: 310px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 140px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    border-radius: 50%;  /* Espaçamento entre o logo e o título */
+}
