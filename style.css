@@ -252,14 +252,14 @@ footer {
 }
 
 .gallery-item {
-    margin-right: 20px; /* Espaçamento entre as imagens */
+    margin-right: 40px; /* Espaçamento entre as imagens */
     transition: transform 0.3s ease;
     flex: 0 0 auto; /* Impede que as imagens aumentem além do seu tamanho original */
 }
 
 .gallery-item img {
     display: block;
-    width: 250px; /* Tamanho das imagens */
+    width: 300px; /* Tamanho das imagens */
     height: 310px;
     object-fit: cover;
     border-radius: 5px;
