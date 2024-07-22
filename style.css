@@ -275,8 +275,7 @@ footer {
 
 .gallery-images {
     display: flex;
-    overflow-x: auto; /* Permite a navegação horizontal */
-    overflow-y: hidden; /* Esconde a barra de rolagem vertical */
+    cursor: pointer;
     white-space: nowrap; /* Mantém as imagens em uma linha horizontal */
 }
 
@@ -292,12 +291,9 @@ footer {
     height: 310px;
     object-fit: cover;
     border-radius: 5px;
+    animation: moveImage 50s infinite alternate;
 }
 
-.gallery-item:hover {
-    
-    transform: scale(1.1); /* Efeito de zoom */
-}
 
 .container {
     width: 80%;
@@ -379,3 +375,15 @@ footer {
         height: 800px;
     }
 }
+
+@keyframes moveImage {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-590%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
